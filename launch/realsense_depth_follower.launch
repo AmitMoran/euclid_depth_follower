@@ -1,0 +1,35 @@
+<launch>
+	
+	<arg name="manager" default="follower_standalone_nodelet"/>
+	
+	<arg name="MinY" default="0" />
+	<arg name="MaxY" default="1.0" />
+	<arg name="MinX" default="-0.4" />
+	<arg name="MaxX" default="0.4" />
+	<arg name="MinZ" default="0.3" />
+	<arg name="MaxZ" default="2.5" />
+
+	<arg name="MinBlobSize" default="2000" />
+
+	
+  	<node pkg="nodelet" type="nodelet" name="$(arg manager)"  args="manager" output="screen"/>
+  	
+  	<node pkg="nodelet" type="nodelet" name="realsense_depth_follower"
+	args="load realsense_depth_follower/DepthFollowerNodelet $(arg manager)
+	
+	MinY $(arg MinY) 
+        MaxY $(arg MaxY)
+        MinX $(arg MinX)
+        MaxX $(arg MaxX)
+        MinZ $(arg MinZ)
+        MaxZ $(arg MaxZ)
+
+        MinBlobSize $(arg MinBlobSize)">
+
+		<!-- remap from="/camera/depth/points" to="/camera/depth/enhanced_points"/ -->
+	
+			
+	</node>
+
+  
+</launch> 

@@ -1,0 +1,7 @@
+<library path="lib/librealsense_depth_follower_nodelet">
+  <class name="realsense_depth_follower/DepthFollowerNodelet" type="realsense_depth_follower::DepthFollowerNodelet" base_class_type="nodelet::Nodelet">
+  <description>
+  Intel(R) RealSense(TM) depth follower nodelet.
+  </description>
+  </class>
+</library>
