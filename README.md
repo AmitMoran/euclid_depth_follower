@@ -2,8 +2,7 @@
 
 This nodelet register to the pointcloud msg, find a centroid and publishes this as a goal for the robot movement control to handle.
 
-Intel® Euclid™ Community Site
-	http://www.euclidcommunity.intel.com/
+[Intel® Euclid™ Community Site](http://www.euclidcommunity.intel.com).
 
 Intel® Euclid™ Support Forum
 	http://www.intel.com/content/www/us/en/support/emerging-technologies/intel-euclid-development-kit.html
