@@ -2,6 +2,10 @@
 
 This nodelet register to the pointcloud msg, find a centroid and publishes this as a goal for the robot movement control to handle.
 
+http://www.intel.com/Euclid_XXX
+
+http://wiki.ros.org/EuclidWiki_XXX
+
 ## Subscribed Topics
 
     camera/depth/points (sensor_msgs/PointCloud2)
