@@ -1,4 +1,4 @@
-# Intel&reg; Euclid&trade; Depth follower sample.
+# Depth follower sample for Intel&reg; Euclid&trade;
 
 This nodelet register to the pointcloud msg, find a centroid and publishes this as a goal for the robot movement control to handle.
 
